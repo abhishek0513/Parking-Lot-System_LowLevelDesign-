@@ -1,5 +1,7 @@
 package org.example.ParkingController;
 
+import org.example.ParkingSpots.ParkingSpot;
+
 import java.util.List;
 
 public class ParkingLot {

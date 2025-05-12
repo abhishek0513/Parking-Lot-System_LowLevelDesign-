@@ -1,5 +1,6 @@
 package org.example.VechileFactoryPackage.ConcreteVechile;
 
+import org.example.FareStrategyPackage.ParkingFeeStrategy;
 import org.example.VechileFactoryPackage.Vechile;
 
 public class OtherVechile extends Vechile {

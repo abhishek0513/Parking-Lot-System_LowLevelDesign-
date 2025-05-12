@@ -1,6 +1,7 @@
 package org.example.VechileFactoryPackage;
 
 import org.example.CommonEnum.DurationType;
+import org.example.FareStrategyPackage.ParkingFeeStrategy;
 
 public class Vechile {
     private String licensePlate;

@@ -13,12 +13,12 @@ public abstract class ParkingSpot {
         this.spotType = spotType;
         this.isOccupied = false;
     }
-    private boolean isOccupied(){
+    public boolean isOccupied(){
         return isOccupied;
     }
 
     public abstract boolean canParkVechile(Vechile vechile);
-    public void parkVechile(){
+    public void parkVechile(Vechile vechile){
         if(isOccupied){
             throw new IllegalArgumentException("Spot already occupied");
         }

@@ -1,14 +1,19 @@
 package org.example.VechileFactoryPackage;
 
+import org.example.FareStrategyPackage.ParkingFeeStrategy;
+import org.example.VechileFactoryPackage.ConcreteVechile.BikeVechile;
+import org.example.VechileFactoryPackage.ConcreteVechile.CarVechile;
+import org.example.VechileFactoryPackage.ConcreteVechile.OtherVechile;
+
 public class VechileFactory {
-    public static Vechile createVechile(String vechileType, String licensePlate, ParkingStrategy feeStrategy)
+    public static Vechile createVechile(String vechileType, String licensePlate, ParkingFeeStrategy feeStrategy)
     {
         if(vechileType.equalsIgnoreCase("Car")){
-            return new carVechile(vechileType,licensePlate,feeStrategy);
+            return new CarVechile(vechileType,licensePlate,feeStrategy);
         }
         else if(vechileType.equalsIgnoreCase("Bike")){
-            return new bikeVechile(vechileType, licensePlate, feeStrategy);
+            return new BikeVechile(vechileType, licensePlate, feeStrategy);
         }
-        return new otherVechile(vechileType,licensePlate,feeStrategy);
+        return new OtherVechile(vechileType,licensePlate,feeStrategy);
     }
 }
